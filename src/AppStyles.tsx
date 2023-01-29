@@ -5,13 +5,13 @@ const AppContainer = styled(Column)`
 
     width: 82.75%;
 
-    height: 80%;
+    height: 87.5%;
 
     align-items: flex-start;
 
     justify-content: flex-start;
 
-    background: green;
+    background: #475c6c;
 
     // padding: 10rem 10rem;
 
