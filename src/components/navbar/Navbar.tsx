@@ -1,23 +1,32 @@
 import React from "react";
-import { NavbarContainer, NavLinksContainer } from "./NavbarStyles";
+import { images } from "../../constants/images";
+import { NavbarContainer, NavLinksContainer, Logo } from "./NavbarStyles";
+import styled from "styled-components";
+import ThemeInterface from "../../constants/interfaces/theme/ThemeInterface";
 
 const Navbar = (props:{}) => {
-
-    const navlinks = ["home", "new", "popular", "trending", "categories"];
-
-    const navlinksWrapped = navlinks.map((link, index) => (
-        <li key={link + index}>
-            <a href={`${link}`}>{link}</a>
-        </li>
-    ))
     return (
         <NavbarContainer>
-        <h2 >Navbar</h2>
+        <Logo src={images.logo}/>
         <NavLinksContainer>
             {navlinksWrapped}
         </NavLinksContainer>
         </NavbarContainer>
     );
 };
+
+const navlinks = ["home", "new", "popular", "trending", "categories"];
+
+const CustomLink = styled.a`
+
+    color: ${({ theme }: { theme:ThemeInterface }) => (theme.darkGreyishBlue)};
+
+`;
+
+const navlinksWrapped = navlinks.map((link, index) => (
+        <li key={link + index}>
+            <CustomLink href={`${link}`}>{link}</CustomLink>
+        </li>
+    ))
 
 export default Navbar;
