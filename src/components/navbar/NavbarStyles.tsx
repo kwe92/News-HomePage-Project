@@ -9,7 +9,7 @@ width: 100%;
 
 height: 5rem;
 
-background: yellow;
+background: #8a8583;
 
 `;
 
@@ -21,10 +21,17 @@ const NavLinksContainer = styled.ul`
 
     align-items: center;
 
+    text-transform: capitalize;
+
+
+`;
+
+const Logo = styled.img`
 
 `;
 
 export { 
       NavbarContainer
     , NavLinksContainer
-    ,  };
+    , Logo
+  };
