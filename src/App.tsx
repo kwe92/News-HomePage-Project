@@ -2,15 +2,14 @@ import React from "react";
 import AppGlobalTheme from "./indexStyles";
 import Navbar from "./components/navbar/Navbar";
 import { AppContainer } from "./AppStyles";
-interface Props{
+import TopSection from "./components/topSection/TopSection";
 
-};
-
-const App = (props:Props) => {
+const App = (props:{}) => {
     return(
         <AppContainer>
             <AppGlobalTheme />
             <Navbar />
+            <TopSection />
         </AppContainer>
        
     );
