@@ -1,5 +1,5 @@
 import{ createGlobalStyle } from "styled-components";
-import ThemeInterface from "./interfaces/theme/ThemeInterface";
+import ThemeInterface from "./constants/interfaces/theme/ThemeInterface";
 import AppTheme from "./styles/theme/AppTheme";
 
 
@@ -16,7 +16,7 @@ const AppGlobalTheme = createGlobalStyle`
     }
 
     body{
-        font-family: Outfit;
+        font-family: Inter;
         background-color: ${({ theme }: { theme:ThemeInterface }) => (theme.offWhiteColor)};
     }
 
