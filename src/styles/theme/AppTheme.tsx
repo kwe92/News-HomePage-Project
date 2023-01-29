@@ -1,4 +1,4 @@
-import ThemeInterface from "../../interfaces/theme/ThemeInterface";
+import ThemeInterface from "../../constants/interfaces/theme/ThemeInterface";
 
 const AppTheme: ThemeInterface = {
     softOrangeColor: "hsl(35, 77%, 62%)",
