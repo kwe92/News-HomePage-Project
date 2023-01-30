@@ -1,6 +1,5 @@
 import{ createGlobalStyle } from "styled-components";
 import ThemeInterface from "./constants/interfaces/theme/ThemeInterface";
-import AppTheme from "./styles/theme/AppTheme";
 
 
 const AppGlobalTheme = createGlobalStyle`
