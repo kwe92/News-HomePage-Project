@@ -1,7 +1,7 @@
 import React from "react";
 import { ContentContainer1, TopSectionMainContainer, TopImageContainer, TopContainerImage, TopContainerBody, ContentTitle, ContentBodyContainer, ContentP } from "./topSectionStyles";
 import ReadMoreButton from "./readMoreButton/ReadMoreButton";
-import NewsBoard from "../newsBoard/NewsBoard";
+import NewsBoard from "./newsBoard/NewsBoard";
 
 const TopSection = (props:{}) => {
     return(

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Column } from "../../styles/layout/Flex";
+import { Column } from "../../../styles/layout/Flex";
 
 const NewsBoardContainer = styled(Column)`
 
