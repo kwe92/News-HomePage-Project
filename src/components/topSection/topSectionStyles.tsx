@@ -7,7 +7,7 @@ const TopSectionMainContainer = styled(Row)`
 
  width: 100%;
 
- height: 65%;
+ height: 60%;
 
  background: #eed7a1;
 
@@ -35,22 +35,11 @@ const ContentContainer1 = styled(Column)`
 
 `;
 
-
-const ContentContainer2 = styled(Column)`
-
-    height: 100%;
-
-    width: 34.5%;
-
-    background: #cd8b62;
-
-`; 
-
 const TopImageContainer = styled(Row)`
 
     width: 100%;
 
-    height: 55%;
+    height: 65%;
 
     background: #d3cdae;
 
@@ -78,7 +67,9 @@ const TopContainerBody = styled(Row)`
 
     width: 100%;
 
-    height: 45%;
+    height: 35%;
+
+    gap 10%;
 
     background: #bf6164;
 
@@ -88,20 +79,45 @@ const ContentTitle = styled.h1`
 
     width: 40%;
 
-    font-size: 2.7rem;
+    font-size: 2.75rem;
 
     font-weight: ${({ theme }: { theme: ThemeInterface }) => (theme.FontWeightHeavy)};
 
+    word-wrap: break-word;
 `;
+
+const ContentBodyContainer = styled(Column)`
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    height: 100%;
+
+    width: 50%;
+
+    background: orange;
+    
+`;
+
+const ContentP = styled.p`
+
+    color: ${({ theme }:{ theme:ThemeInterface }) => (theme.greyishBlueColor)};
+
+    font-size: ${({ theme }:{ theme:ThemeInterface }) => (theme.bodyFontSize)};
+
+`;
+
 
 export {
       TopSectionMainContainer
     , ContentContainer1
-    , ContentContainer2
     , TopImageContainer
     , TopContainerImage
     , TopContainerBody
     , ContentTitle
+    , ContentBodyContainer
+    , ContentP
     
 }
 
