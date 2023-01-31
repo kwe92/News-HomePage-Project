@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import ThemeInterface from "../../../constants/interfaces/theme/ThemeInterface";
-import { Column } from "../../../styles/layout/Flex";
+import { Column, Row } from "../../../styles/layout/Flex";
 
 // TODO: Finish adding color
 
@@ -12,9 +12,9 @@ const NewsBoardContainer = styled(Column)`
 
     height: 100%;
 
-    width: 34.5%;
+    width: 32%;
 
-    background: #cd8b62;
+    background: ${({ theme }: { theme:ThemeInterface }) => (theme.veryDarkBlueColor)};
 
 `;
 
@@ -30,6 +30,8 @@ const NewsBoardInnerContainer = styled(Column)`
 
 const NewsBoardTitle = styled.h1`
 
+    color: ${({ theme }: { theme:ThemeInterface }) => (theme.softOrangeColor)};
+ 
 `;
 
 const NewsBoardListTile = styled(Column)`
@@ -42,6 +44,8 @@ const NewsBoardListTile = styled(Column)`
 `;
 
 const ListTileTop = styled.h3`
+
+    color: ${({ theme }: { theme:ThemeInterface }) => (theme.offWhiteColor)};
 
 `;
 

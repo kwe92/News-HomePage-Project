@@ -8,13 +8,13 @@ const NewsBoard = (props:{}) => {
             <NewsBoardInnerContainer>
 
             <NewsBoardTitle>
-            New
+                News
             </NewsBoardTitle>
 
             <NewsBoardListTile>
 
                 <ListTileTop>
-                Hydrogen Vs Electric Cars
+                    Hydrogen Vs Electric Cars
                 </ListTileTop>
 
                 <ListTileBottom>
