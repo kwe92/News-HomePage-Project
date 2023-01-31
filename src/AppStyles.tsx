@@ -11,7 +11,9 @@ const AppContainer = styled(Column)`
 
     justify-content: flex-start;
 
-    background: #475c6c;
+    gap: 4%;
+
+    // background: #475c6c;
 
     // padding: 10rem 10rem;
 
