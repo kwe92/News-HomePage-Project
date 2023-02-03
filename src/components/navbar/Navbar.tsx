@@ -1,6 +1,6 @@
 import React from "react";
 import { images } from "../../constants/images";
-import { NavbarContainer, NavLinksContainer, Logo } from "./NavbarStyles";
+import { NavbarContainer, NavLinksContainer, Logo, IconMenu } from "./NavbarStyles";
 import styled from "styled-components";
 import ThemeInterface from "../../constants/interfaces/theme/ThemeInterface";
 
@@ -11,6 +11,7 @@ const Navbar = (props:{}) => {
         <NavLinksContainer>
             {navlinksWrapped}
         </NavLinksContainer>
+        <IconMenu src={images.iconMenu}/>
         </NavbarContainer>
     );
 };
