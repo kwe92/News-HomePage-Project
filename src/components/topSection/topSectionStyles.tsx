@@ -7,7 +7,7 @@ const TopSectionMainContainer = styled(Row)`
 
  width: 100%;
 
- height: 56.5%;
+ height: 57.5%;
 
 //  background: #eed7a1;
 
@@ -16,6 +16,12 @@ const TopSectionMainContainer = styled(Row)`
  justify-content: space-between;
  
 //  gap: 3%;
+
+@media screen and (max-width:1024px){
+    flex-direction: column;
+    height: 300%;
+    gap: 3rem;
+}
 
 `;
 
@@ -33,6 +39,11 @@ const ContentContainer1 = styled(Column)`
 
     // background: #f8efd2;
 
+    @media screen and (max-width:1024px){
+        width:100%;
+        height: 40rem;
+    }
+
 `;
 
 const TopImageContainer = styled(Row)`
@@ -46,6 +57,10 @@ const TopImageContainer = styled(Row)`
     background-image: url(${images.imageWeb3Mobiile});
 
     background-size: cover;
+
+    @media screen and (max-width:1024px){
+        height: 100%;
+    }
 
 `;
 
@@ -67,11 +82,17 @@ const TopContainerBody = styled(Row)`
 
     width: 100%;
 
-    height: 35%;
+    height: 34.5%;
 
     gap 10%;
 
     // background: #bf6164;
+
+    @media screen and (max-width:1024px){
+        height: auto;
+        flex-direction: column;
+        gap: 2rem;
+    }
 
 `;
 
@@ -84,6 +105,10 @@ const ContentTitle = styled.h1`
     font-weight: ${({ theme }: { theme: ThemeInterface }) => (theme.FontWeightHeavy)};
 
     word-wrap: break-word;
+
+    @media screen and (max-width:1024px){
+        width: 100%;
+    }
 `;
 
 const ContentBodyContainer = styled(Column)`
@@ -97,6 +122,12 @@ const ContentBodyContainer = styled(Column)`
     width: 48.5%;
 
     // background: orange;
+
+    @media screen and (max-width:1024px){
+        height: auto;
+        width: 100%;
+        gap: 2rem;
+    }
     
 `;
 
