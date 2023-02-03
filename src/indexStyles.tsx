@@ -32,6 +32,10 @@ const AppGlobalTheme = createGlobalStyle`
         align-items: center;
         justify-content: center;
         height: 100vh;
+
+        @media screen and (max-width:1024px){
+            height: auto;
+        }
     }
 
 `;
