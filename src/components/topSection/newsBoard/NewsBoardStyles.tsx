@@ -16,6 +16,11 @@ const NewsBoardContainer = styled(Column)`
 
     background: ${({ theme }: { theme:ThemeInterface }) => (theme.veryDarkBlueColor)};
 
+    @media screen and (max-width:1024px){
+        width: 100%;
+        height: 40rem;
+    }
+
 `;
 
 const NewsBoardInnerContainer = styled(Column)`
@@ -25,6 +30,10 @@ const NewsBoardInnerContainer = styled(Column)`
     height: 100%;
     width: 100%;
     padding: 2rem;
+
+    @media screen and (max-width:1024px){
+        padding: 2rem 2rem 4rem 2rem;
+    }
 
 `;
 
