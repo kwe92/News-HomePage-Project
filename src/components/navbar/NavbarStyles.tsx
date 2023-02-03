@@ -11,6 +11,13 @@ height: 5rem;
 
 // background: #8a8583;
 
+@media screen and (max-width:1024px){
+  margin-top: 3rem;
+}
+
+@media screen and (max-width:450px){
+  margin-top: 2rem;
+}
 `;
 
 const NavLinksContainer = styled.ul`
@@ -23,6 +30,9 @@ const NavLinksContainer = styled.ul`
 
     text-transform: capitalize;
 
+    @media screen and (max-width: 1024px){
+      display: none;
+    }
 
 `;
 
@@ -30,8 +40,19 @@ const Logo = styled.img`
 
 `;
 
+const IconMenu = styled.img`
+
+  display: none;
+  @media screen and (max-width:1024px){
+    display: block;
+  }
+
+`;
+
 export { 
       NavbarContainer
     , NavLinksContainer
     , Logo
+    , IconMenu
+
   };
