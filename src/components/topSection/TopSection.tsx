@@ -11,7 +11,7 @@ const TopSection = (props:{}) => {
                 <TopImageContainer />
                 <TopContainerBody>
                     <ContentTitle>
-                    The Bright Future of Web3.0?
+                    The Bright Future of Web 3.0?
                     </ContentTitle>
 
                     <ContentBodyContainer>
