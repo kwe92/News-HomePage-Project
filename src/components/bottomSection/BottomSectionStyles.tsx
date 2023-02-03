@@ -9,7 +9,7 @@ const BottomSectionMainContainer = styled(Row)`
 
     height: 15%;
 
-    margin-top: 1rem;
+    margin-top: 2.25rem;
 
     align-items: flex-start;
 
@@ -18,6 +18,18 @@ const BottomSectionMainContainer = styled(Row)`
     gap: 2%;
 
     // background: #a7b087;
+
+    @media screen and (max-width:1024px){
+        
+        flex-direction: column;
+        gap: 2.25rem;
+        margin-top: 1.25rem;
+        padding-bottom: 3rem;
+    }
+
+    @media screen and (max-width:1024px){
+        gap: 1.25rem;
+    }
 
 
 `;
@@ -31,6 +43,11 @@ const ArticleListTile = styled(Row)`
     gap: 5%;
     // background: lightblue;
 
+    @media screen and (max-width:1024px){
+        width: 100%;
+        height: auto;
+    }
+
 `;
 
 const ListTileImage = styled.img`
@@ -38,35 +55,56 @@ const ListTileImage = styled.img`
     height: 100%;
     width: 30%;
 
+    @media screen and (max-width: 1024px){
+        height: 12rem;
+    }
+
+    @media screen and (max-width: 450px){
+        height: 8rem;
+    }
+
 `;
 
 const ListTileTop = styled.h1`
+
  color: ${({ theme }:{ theme:ThemeInterface }) => (theme.greyishBlueColor)};
+ 
 `;
 
 const ListTileMiddle = styled.h4`
 
-color: ${({ theme }:{ theme:ThemeInterface }) => (theme.veryDarkBlueColor)};
-font-weight: ${({ theme }:{ theme:ThemeInterface }) => (theme.FontWeightHeavy)};
+    color: ${({ theme }:{ theme:ThemeInterface }) => (theme.veryDarkBlueColor)};
+    font-weight: ${({ theme }:{ theme:ThemeInterface }) => (theme.FontWeightHeavy)};
+
 `;
 
 const ListTileBottom = styled.p`
 
-color: ${({ theme }:{ theme:ThemeInterface }) => (theme.greyishBlueColor)};
-font-size: ${({ theme }:{ theme:ThemeInterface }) => (theme.bodyFontSize)};
-// font-weight: ${({ theme }:{ theme:ThemeInterface }) => (theme.FontWeightHeavy)};
+    color: ${({ theme }:{ theme:ThemeInterface }) => (theme.greyishBlueColor)};
+    font-size: ${({ theme }:{ theme:ThemeInterface }) => (theme.bodyFontSize)};
+    // font-weight: ${({ theme }:{ theme:ThemeInterface }) => (theme.FontWeightHeavy)};
 
 `;
 
 const ListTileBodyContainer = styled(Column)`
 
-align-items: flex-start;
+    align-items: flex-start;
 
-justify-content: space-between;
+    justify-content: space-between;
 
-height: 100%;
+    height: 100%;
 
-width: 70%;
+    width: 70%;
+
+    @media screen and (max-width:1024px){
+        justify-content: flex-start;
+        gap: 1.25rem;
+    }
+
+    // @media screen and (max-width:450px){
+    //     justify-content: space-between;
+    //     gap: 0;
+    // }
 
 `;
 
