@@ -4,74 +4,66 @@ import ThemeInterface from "../../constants/interfaces/theme/ThemeInterface";
 import { Column, Row } from "../../styles/layout/Flex";
 
 const TopSectionMainContainer = styled(Row)`
+  width: 100%;
 
- width: 100%;
+  height: 57.5%;
 
- height: 57.5%;
+  //  background: #eed7a1;
 
-//  background: #eed7a1;
+  align-items: flex-start;
 
- align-items: flex-start;
+  justify-content: space-between;
 
- justify-content: space-between;
- 
-//  gap: 3%;
+  //  gap: 3%;
 
-@media screen and (max-width:1024px){
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
     height: 300%;
     gap: 3rem;
-}
-
+  }
 `;
 
 const ContentContainer1 = styled(Column)`
+  align-items: flex-start;
 
-    align-items: flex-start;
+  justify-content: flex-start;
 
-    justify-content: flex-start;
+  height: 100%;
 
-    height: 100%;
+  width: 66%;
 
-    width: 66%;
+  gap: 5%;
 
-    gap: 5%;
+  // background: #f8efd2;
 
-    // background: #f8efd2;
-
-    @media screen and (max-width:1024px){
-        width:100%;
-        height: 40rem;
-    }
-
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    height: 40rem;
+  }
 `;
 
 const TopImageContainer = styled(Row)`
+  width: 100%;
 
-    width: 100%;
+  height: 65%;
 
-    height: 65%;
+  // background: #d3cdae;
 
-    // background: #d3cdae;
+  background-image: url(${images.imageWeb3Mobiile});
 
-    background-image: url(${images.imageWeb3Mobiile});
+  background-size: cover;
 
-    background-size: cover;
-
-    @media screen and (max-width:1024px){
-        height: 100%;
-    }
-
+  @media screen and (max-width: 1024px) {
+    height: 100%;
+  }
 `;
 
 const TopContainerImage = styled.img`
+  max-width: 100%;
 
-    max-width: 100%;
-    
-    width: 100%;
+  width: 100%;
 
-    object-fit: cover;
-
+  object-fit: cover;
 `;
 
 const TopContainerBody = styled(Row)`
@@ -97,58 +89,55 @@ const TopContainerBody = styled(Row)`
 `;
 
 const ContentTitle = styled.h1`
+  width: 40%;
 
-    width: 40%;
+  font-size: 2.75rem;
 
-    font-size: 2.75rem;
+  font-weight: ${({ theme }: { theme: ThemeInterface }) =>
+    theme.FontWeightHeavy};
 
-    font-weight: ${({ theme }: { theme: ThemeInterface }) => (theme.FontWeightHeavy)};
+  word-wrap: break-word;
 
-    word-wrap: break-word;
+  @media screen and (max-width: 1090px) {
+    font-size: 2.65rem;
+  }
 
-    @media screen and (max-width:1024px){
-        width: 100%;
-    }
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 const ContentBodyContainer = styled(Column)`
+  align-items: flex-start;
 
-    align-items: flex-start;
+  justify-content: space-between;
 
-    justify-content: space-between;
+  height: 100%;
 
-    height: 100%;
+  width: 48.5%;
 
-    width: 48.5%;
+  // background: orange;
 
-    // background: orange;
-
-    @media screen and (max-width:1024px){
-        height: auto;
-        width: 100%;
-        gap: 2rem;
-    }
-    
+  @media screen and (max-width: 1024px) {
+    height: auto;
+    width: 100%;
+    gap: 2rem;
+  }
 `;
 
 const ContentP = styled.p`
+  color: ${({ theme }: { theme: ThemeInterface }) => theme.greyishBlueColor};
 
-    color: ${({ theme }:{ theme:ThemeInterface }) => (theme.greyishBlueColor)};
-
-    font-size: ${({ theme }:{ theme:ThemeInterface }) => (theme.bodyFontSize)};
-
+  font-size: ${({ theme }: { theme: ThemeInterface }) => theme.bodyFontSize};
 `;
 
-
 export {
-      TopSectionMainContainer
-    , ContentContainer1
-    , TopImageContainer
-    , TopContainerImage
-    , TopContainerBody
-    , ContentTitle
-    , ContentBodyContainer
-    , ContentP
-    
-}
-
+  TopSectionMainContainer,
+  ContentContainer1,
+  TopImageContainer,
+  TopContainerImage,
+  TopContainerBody,
+  ContentTitle,
+  ContentBodyContainer,
+  ContentP,
+};
