@@ -43,6 +43,9 @@ const Logo = styled.img`
 const IconMenu = styled.img`
 
   display: none;
+
+  max-width: 100%;
+  
   @media screen and (max-width:1024px){
     display: block;
   }
