@@ -12,6 +12,18 @@ const App = (props: {}) => {
       <Navbar />
       <TopSection />
       <BottomSection />
+      <div
+        style={{
+          //   marginTop: "0rem",
+          position: "relative",
+          top: 50,
+          bottom: 0,
+          right: 0,
+          left: 0,
+        }}
+      >
+        Challenge by Frontend Mentor. Coded by Kweayon Clark.
+      </div>
     </AppContainer>
   );
 };
