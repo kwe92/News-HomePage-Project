@@ -24,8 +24,6 @@ Users should be able to:
 
 ## Built With
 
-https://www.framer.com/motion/
-
 - [TypeScript](https://www.typescriptlang.org/docs/) - Static Typechecker For JS
 - [FramerMotion](https://www.framer.com/motion/) - Production-Ready Motion Library
 - Semantic HTML5 markup
@@ -39,9 +37,7 @@ https://www.framer.com/motion/
 
 ## Links
 
-### Hosting URL
-
-- https://news-page-project-8d72b.web.app
+- Live Site URL: [News-Page](https://news-page-project-8d72b.web.app)
 
 ## Screenshots
 
