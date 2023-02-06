@@ -39,7 +39,7 @@ https://www.framer.com/motion/
 
 ## Links
 
-### Hosting URL
+### Project Link
 
 - https://news-page-project-8d72b.web.app
 
@@ -69,6 +69,8 @@ https://www.framer.com/motion/
 
 <img width="1440" alt="Screenshot 2023-02-05 at 6 27 40 PM" src="https://user-images.githubusercontent.com/47009536/216856181-0f955354-30a6-4e1c-a7da-2f822cf9b56b.png">
 
+<img width="1440" alt="Screenshot 2023-02-05 at 9 07 43 PM" src="https://user-images.githubusercontent.com/47009536/216874999-a01f9ea0-7103-4669-bcd5-3143a1ae11e8.png">
+
 ### Mobile View
 
 <img width="1440" alt="Screenshot 2023-02-05 at 6 28 07 PM" src="https://user-images.githubusercontent.com/47009536/216856142-ed861e52-34d9-4006-bc1e-3e9207c42dfc.png">
@@ -76,5 +78,7 @@ https://www.framer.com/motion/
 <img width="1440" alt="Screenshot 2023-02-05 at 6 28 41 PM" src="https://user-images.githubusercontent.com/47009536/216856153-9033709b-3f98-4562-8e4c-1ba42ec3eb28.png">
 
 <img width="1440" alt="Screenshot 2023-02-05 at 6 28 23 PM" src="https://user-images.githubusercontent.com/47009536/216856158-23fb3fba-d6a3-42dd-bb2e-f627d707d83b.png">
+
+<img width="1440" alt="Screenshot 2023-02-05 at 9 07 55 PM" src="https://user-images.githubusercontent.com/47009536/216875017-35915a2b-de20-48b1-9032-a8fcef2f4849.png">
 
 #### Author: Kweayon Clark
